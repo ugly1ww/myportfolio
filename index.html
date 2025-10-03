@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Візитка — Черній Димитрій Максимович | Fullstack Developer</title>
+    <meta name="description" content="Візитна картка студента — Fullstack розробник. Контакти, портфоліо, навички." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23007acc'/%3E%3Ctext x='50' y='57' font-size='40' text-anchor='middle' fill='white' font-family='Arial'%3EF%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="main.css" />
+
+</head>
+<body>
+<div class="container" role="main">
+    <aside class="card" aria-label="Візитка">
+        <div class="avatar" title="Фото">
+            <img src="img/avatar.jpg" alt="Фото Чернія Димитрія Максимовича"/>
+        </div>
+
+        <div>
+            <h1>Черній Димитрій Максимович</h1>
+            <div class="subtitle">Студент ХНТУ — Факультет інформаційних технологій та дизайну<br><strong>Спеціальність:</strong> 123 «Комп’ютерна інженерія», бакалавр, 3 курс, група 3КСМ</div>
+        </div>
+
+        <div class="contacts">
+            <div><strong>Напрям:</strong> Fullstack розробка</div>
+            <div><strong>Email:</strong> <a href="mailto:uglyheart.mp3@gmail.com">uglyheart.mp3@gmail.com</a></div>
+            <div><strong>Телефон:</strong> <a href="tel:+380501234567">+380 98 508 63 19</a></div>
+            <div><strong>Лінк:</strong> <a href="https://github.com/ugly1ww" target="_blank" rel="noopener">GitHub / ugly1ww</a></div>
+        </div>
+
+        <div style="margin-top:8px">
+            <span class="badge">Fullstack • HTML • CSS • JS</span>
+        </div>
+
+        <div style="margin-top:8px">
+            <div style="font-size:13px; color:var(--muted); margin-bottom:6px">Ключові навички</div>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3 (Flex/Grid)</span>
+                <span class="skill">JavaScript(Навчаюсь)</span>
+                <span class="skill">Node.js(Навчаюсь)</span>
+                <span class="skill">React(Навчаюсь)</span>
+                <span class="skill">Git(Навчаюсь)</span>
+            </div>
+        </div>
+    </aside>
+
+    <section class="content" aria-label="Основна інформація">
+        <article class="panel hero" aria-labelledby="intro-title">
+            <div class="intro">
+                <h2 id="intro-title">Коротко про мене</h2>
+                <p style="color:var(--muted); margin-top:6px;">
+                    Я — майбутній Fullstack розробник, зацікавлений у створенні інтерфейсів і серверної логіки. Маю досвід верстки адаптивних інтерфейсів (HTML/CSS), роботи з JavaScript та трохи React, знайомий з Node.js і реляційними БД.
+                </p>
+
+                <div class="buttons">
+                    <a class="btn" href="#portfolio">Портфоліо</a>
+                    <a class="btn" href="#contacts">Зв'язатися</a>
+                </div>
+            </div>
+
+            <div style="width:260px; min-width:200px;">
+                <div style="background:linear-gradient(180deg, rgba(0,122,204,0.06), rgba(0,168,255,0.03)); padding:10px; border-radius:8px;">
+                    <strong style="font-size:14px; display:block; margin-bottom:8px;">Переваги в професії</strong>
+                    <ul style="margin:0; padding-left:18px; color:var(--muted); font-size:14px;">
+                        <li>Швидке прототипування UI</li>
+                        <li>Кросплатформна розробка</li>
+                        <li>Оптимізація продуктивності</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="panel" aria-labelledby="skills-title">
+            <h3 id="skills-title">Навички (рівень)</h3>
+            <table>
+                <thead>
+                <tr><th>Технологія</th><th>Рівень</th><th>Коментар</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>HTML5 / CSS3</td><td>Впевнено</td><td>Адаптивна верстка (Flexbox / Grid)</td></tr>
+                <tr><td>JavaScript (ES6+)</td><td>Середній</td><td>DOM, fetch, асинхронність</td></tr>
+                <tr><td>React</td><td>Середній</td><td>Компоненти, хуки</td></tr>
+                <tr><td>Node.js / Express</td><td>Базовий</td><td>API та бекенд</td></tr>
+                <tr><td>Git</td><td>Базовий</td><td>Контроль версій, GitHub</td></tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="panel" aria-labelledby="frame-title">
+            <h3 id="frame-title">Резюме (фрейм)</h3>
+            <div class="frame">
+                <!-- iframe можна вбудувати на реальний документ; для прикладу about:blank -->
+                <iframe srcdoc='
+            <style>body{font-family:Arial, sans-serif;color:#012;background:#fff;padding:18px;margin:0}h4{margin:0 0 6px 0}p{margin:0 0 8px 0;color:#333}</style>
+            <h4>Резюме — Черній Димитрій</h4>
+            <p>У майбутньому Fullstack розробник. Досвід: адаптивна верстка, SPA, бази даних. Шукаю практичні проєкти для розвитку.</p>
+            <p><strong>Освіта:</strong> ХНТУ, ФІТД, 3 курс.</p>
+            <p><strong>Контакти:</strong> uglyheart.mp3@gmail.com</p>' title="Резюме вбудоване">
+                </iframe>
+            </div>
+        </article>
+
+        <article id="contacts" class="panel" aria-labelledby="contact-title">
+            <h3 id="contact-title">Контактна форма</h3>
+            <p style="color:var(--muted)">Залиште повідомлення — js обробить візуально (без реального відправлення).</p>
+
+            <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+                <div class="row">
+                    <div class="col">
+                        <label for="name">Ім'я</label>
+                        <input id="name" name="name" type="text" placeholder="Ваше ім'я" required />
+                    </div>
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                    </div>
+                </div>
+
+                <label for="service">Яка послуга цікавить?</label>
+                <select id="service" name="service">
+                    <option>Веб-дизайн</option>
+                    <option>Front-end розробка</option>
+                    <option>Fullstack розробка</option>
+                    <option>Брендинг</option>
+                </select>
+
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" rows="5" placeholder="Короткий опис завдання..." required></textarea>
+
+                <div style="display:flex; gap:10px; align-items:center;">
+                    <button type="submit" class="btn">Відправити</button>
+                    <button type="reset" class="btn" style="color:var(--muted); border-style:dashed;">Очистити</button>
+                    <div id="formResult" style="margin-left:auto; color:var(--muted); font-size:13px;"></div>
+                </div>
+            </form>
+        </article>
+
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
