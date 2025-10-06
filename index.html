@@ -6,10 +6,23 @@
     <title>Візитка — Черній Димитрій Максимович | Fullstack Developer</title>
     <meta name="description" content="Візитна картка студента — Fullstack розробник. Контакти, портфоліо, навички." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23007acc'/%3E%3Ctext x='50' y='57' font-size='40' text-anchor='middle' fill='white' font-family='Arial'%3EF%3C/text%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
 </head>
 <body>
+
+<div class="menu-btn" id="menu-btn">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<nav class="menu" id="menu">
+    <a href="index.html">Головна</a>
+    <a href="skills.html">Навички</a>
+    <a href="contacts.html">Контакти</a>
+</nav>
+
 <div class="container" role="main">
     <aside class="card" aria-label="Візитка">
         <div class="avatar" title="Фото">
@@ -54,8 +67,8 @@
                 </p>
 
                 <div class="buttons">
-                    <a class="btn" href="#portfolio">Портфоліо</a>
-                    <a class="btn" href="#contacts">Зв'язатися</a>
+                    <a class="btn" href="#">Портфоліо</a>
+                    <a class="btn" href="contacts.html">Зв'язатися</a>
                 </div>
             </div>
 
@@ -71,7 +84,7 @@
             </div>
         </article>
 
-        <article class="panel" aria-labelledby="skills-title">
+<!--        <article class="panel" aria-labelledby="skills-title">
             <h3 id="skills-title">Навички (рівень)</h3>
             <table>
                 <thead>
@@ -85,7 +98,7 @@
                 <tr><td>Git</td><td>Базовий</td><td>Контроль версій, GitHub</td></tr>
                 </tbody>
             </table>
-        </article>
+        </article>-->
 
         <article class="panel" aria-labelledby="frame-title">
             <h3 id="frame-title">Резюме (фрейм)</h3>
@@ -101,9 +114,9 @@
             </div>
         </article>
 
-        <article id="contacts" class="panel" aria-labelledby="contact-title">
+        <!--<article id="contacts" class="panel" aria-labelledby="contact-title">
             <h3 id="contact-title">Контактна форма</h3>
-            <p style="color:var(--muted)">Залиште повідомлення — js обробить візуально (без реального відправлення).</p>
+            <p style="color:var(&#45;&#45;muted)">Залиште повідомлення — js обробить візуально (без реального відправлення).</p>
 
             <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
                 <div class="row">
@@ -130,15 +143,15 @@
 
                 <div style="display:flex; gap:10px; align-items:center;">
                     <button type="submit" class="btn">Відправити</button>
-                    <button type="reset" class="btn" style="color:var(--muted); border-style:dashed;">Очистити</button>
-                    <div id="formResult" style="margin-left:auto; color:var(--muted); font-size:13px;"></div>
+                    <button type="reset" class="btn" style="color:var(&#45;&#45;muted); border-style:dashed;">Очистити</button>
+                    <div id="formResult" style="margin-left:auto; color:var(&#45;&#45;muted); font-size:13px;"></div>
                 </div>
             </form>
-        </article>
+        </article>-->
 
     </section>
 </div>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

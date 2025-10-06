@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакти та Зв'язок</title>
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+
+<div class="menu-btn2" id="menu-btn2">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<nav class="menu2" id="menu2">
+    <a href="index.html">Головна</a>
+    <a href="skills.html">Навички</a>
+    <a href="contacts.html">Контакти</a>
+</nav>
+
+<article id="contacts" class="panel" aria-labelledby="contact-title">
+    <h3 id="contact-title">Контактна форма</h3>
+    <p style="color:var(--muted)">Залиште повідомлення — js обробить візуально (без реального відправлення).</p>
+
+    <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+        <div class="row">
+            <div class="col">
+                <label for="name">Ім'я</label>
+                <input id="name" name="name" type="text" placeholder="Ваше ім'я" required />
+            </div>
+            <div class="col">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+        </div>
+
+        <label for="service">Яка послуга цікавить?</label>
+        <select id="service" name="service">
+            <option>Веб-дизайн</option>
+            <option>Front-end розробка</option>
+            <option>Fullstack розробка</option>
+            <option>Брендинг</option>
+        </select>
+
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="5" placeholder="Короткий опис завдання..." required></textarea>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+            <button type="submit" class="btn">Відправити</button>
+            <button type="reset" class="btn" style="color:var(--muted); border-style:dashed;">Очистити</button>
+            <div id="formResult" style="margin-left:auto; color:var(--muted); font-size:13px;"></div>
+        </div>
+    </form>
+</article>
+
+<script src="js/contacts.js"></script>
+</body>
+</html>
